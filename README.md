@@ -66,7 +66,7 @@ For some code in the code practice scripts, I made use of materials by Jos Elkin
 *May 9: 15:30 - 17:10:*
 * Systematically describing and comparing texts.
 * Required reading:
-	* Chapters 3 and 4 of Silge, J., & Robinson, D. (2018). Text Mining with R: A Tidy Approach. O'Reilly Media, Inc. Available at [Link](https://www.tidytextmining.com)
+	* 
 
 *May 10: 15:30 - 17:10:*
 * Using dictionaries to measure sentiment, happiness and other things we're interested in.
