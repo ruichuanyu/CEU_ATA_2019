@@ -49,6 +49,8 @@ For some code in the code practice scripts, I made use of materials by Jos Elkin
 * Introduction to the course and to EUSpeech, a dataset which will use for running examples: [Link](https://dataverse.harvard.edu/dataverse/euspeech)
 * Required reading:
 	* Schumacher, G., Schoonvelde, M., Traber, D., Dahiya, T., & De Vries, E. (2016). EUSpeech: a New Dataset of EU Elite Speeches. In: Proceedings of the International Conference on the Advances in Computational Analysis of Political Text, 75-80.
+	* Michel, J.B., Shen, Y.K., Aiden, A.P., Veres, A., Gray, M.K., Pickett, J.P., Hoiberg, D., Clancy, D., Norvig, P., Orwant, J. and Pinker, S., (2011). Quantitative analysis of culture using millions of digitized books. Science, 331(6014), 176–182.
+	* Wilkerson, J. and Casas, A. (2017). Large-scale computerized text analysis in political science: opportunities and challenges. Annual Review of Political Science 20: 529-544.
 
 *May 7: 15:30 - 17:10:*
 
@@ -56,26 +58,30 @@ For some code in the code practice scripts, I made use of materials by Jos Elkin
 * Required reading:
 	* Grimmer, J., & Stewart, B. M. (2013). Text as data: The promise and pitfalls of automatic content analysis methods for political texts. Political Analysis, 21(3), 267-297.
 	* Welbers, K., Van Atteveldt, W., & Benoit, K. (2017). Text Analysis in R. Communication Methods and Measures, 11(4), 245-265.
+	* Benoit, K., Watanabe, K., Wang, H, Nulty, P., Obeng, A., Mueller, & Matsuo, A. (2018). Quanteda: An R package for the quantitative analysis of textual data. Journal of Open Source Software, 3(30), 774.
 
 *May 8: 15:30 - 19:00:*
 * Pre-processing data. Going from text to data, including a few notes of caution. Discussion of the research design and research note.
 * Required reading:
 	* Denny, M. J., & Spirling, A. (2018). Text preprocessing for unsupervised learning: why it matters, when it misleads, and what to do about it. Forthcoming at Political Analysis.
-	* Greene, Z., Ceron, A., Schumacher, G., & Fazekas, Z. (2016). The Nuts and Bolts of Automated Text Analysis. Comparing Different Document Pre-Processing Techniques in Four Countries. Working paper.
+	* Schoonvelde, M., Schumacher, G. and Bakker, B.N., (2019). Friends with text as data ben- efits: assessing and extending the use of automated text analysis in political science and political psychology. Journal of Social and Political Psychology, 7(1), 124–143.
 
 *May 9: 15:30 - 17:10:*
 * Systematically describing and comparing texts.
 * Required reading:
-	* 
+	* Chapters 3 and 4 of Silge, J., & Robinson, D. (2018). Text Mining with R: A Tidy Approach. O’Reilly Media, Inc. Available at https://www.tidytextmining.com
+	* Cross, J. & Hermansson, H., (2017). Legislative amendments and informal politics in the European Union: A text reuse approach. European Union Politics, 18(4): 581–602.
+ 	* Bischof, D. & Senninger, R., (2018). Simple politics for the people? Complexity in campaign messages and political knowledge. European Journal of Political Research, 57(2): 473–495.
 
 *May 10: 15:30 - 17:10:*
 * Using dictionaries to measure sentiment, happiness and other things we're interested in.
 * Required reading:
 	* Pennebaker JW & King L (1999) Linguistic styles: language use as an individual difference. Journal of Personality and Social Psychology, 77(6), 1296-1312.
 	*  Young, L., & Soroka, S. (2012). Affective news: The automated coding of sentiment in political texts. Political Communication, 29(2), 205-231.
-* Suggested reading:
-	* Rooduijn, M., & Pauwels, T. (2011). Measuring populism: Comparing two methods of content analysis. West European Politics, 34(6), 1272?1283.
-	* Rheault, L., Beelen, K., Cochrane, C., & Hirst, G. (2016). Measuring Emotion in Parliamentary Debates with Automated Textual Analysis. PLoS One, 11(12).
+	* Kraft, P. (2018). Measuring morality in political attitude expression. Journal of Politics, 80(3): 1028–1033.
+	* Hawkins, K. & Castanho Silva, B. (2018). Text Analysis: Big Data Approaches. In: The Ideational Approach to Populism: Theory, Method & Analysis, edited by Kirk A. Hawkins, Ryan Carlin, Levente Littvay, and Cristobal Rovira Kaltwasser. London: Routledge.
+	* Ramey, A. J., Klingler, J. D., & Hollibaugh, G. E. (2019). Measuring elite personality using speech. Political Science Research and Methods, 7(1),163–184.
+
 * *17:00: Coding Assignment 1 Due*
 
 *May 13: 15:30 - 17:10:*
@@ -83,29 +89,30 @@ For some code in the code practice scripts, I made use of materials by Jos Elkin
 * Required reading:
 	* Slapin JB & Proksch SO (2008) A Scaling Model for Estimating Time-Serial Positions from Texts. American Journal of Political Science 52, 705-722.
 	* Hjorth, F., Klemmensen, R., Hobolt, S., Hansen, M. E., & Kurrild-Klitgaard, P. (2015). Computers, coders, and voters: Comparing automated methods for estimating party positions. Research & Politics, 2(2).
-* Suggested reading:
-	* Lo, J., Proksch, S. O., & Slapin, J. B. (2016). Ideological clarity in multiparty competition: A new measure and test using election manifestos. British Journal of Political Science, 46(3), 591-610.
+* Daniel Schwarz, Denise Traber, & Kenneth Benoit (2017). Estimating intra- 	party preferences: comparing speeches to votes. Political Science Research and Methods 5(2): 379–396.
 
 *May 14: 15:30 - 17:10:*
 * Topic models, unsupervised models for summarizing what a text is about.
 * Required reading:
 	* Blei, D. M. (2012). Probabilistic topic models. Communications of the ACM, 55(4), 77-84.
-	* Roberts, M et al.. (2014). Structural Topic Models for Open-Ended Survey Responses.
-American Journal of Political Science, 58(4), 1064-1082.
-* Suggested reading:
-	* Boumans JW & Trilling D (2016) Taking stock of the toolkit: An overview of relevant automated content analysis approaches and techniques for digital journalism scholars.Digital Journalism 4(1): 8-23.
-	* http://www.scottbot.net/HIAL/index.html@p=19113.html
+	* Roberts, M et al.. (2014). Structural Topic Models for Open-Ended Survey Responses. American Journal of Political Science, 58(4), 1064-1082.
+* Boussalis, C. & Coan, T. (2016). Text-mining the signals of climate change doubt. Global Environmental Change, 36: 89–100.
 
 *May 15: 15:30 - 19:00:*
-* New developments in automated text analysis: (i) crowd-sourcing and (ii) measurement of elite personality, (iii) measurement of semantic shifts.
+* New developments in data: (i) crowd-sourcing data (ii) images as data, (iii) automated speech recognition, (iv) machine translation.
 * Required reading:
-	* Ramey, A. J., Klingler, J. D., & Hollibaugh, G. E. (2016). Measuring elite personality using speech. Political Science Research and Methods, 1-22.
-	* Benoit, K., Conway, D., Lauderdale, B. E., Laver, M., & Mikhaylov, S. (2016). Crowd-sourced text analysis: Reproducible and agile production of political data. American Political Science Review, 110(2), 278-295.
-* Suggested reading:
-	* Azarbonyad, H., Dehghani, M., Beelen, K., Arkut, A., Marx, M., & Kamps, J. (2017). Words are Malleable: Computing Semantic Shifts in Political and Media Discourse. Proceedings of the 2017 ACM Conference on Information and Knowledge Management, 1509-1518.
+	* Benoit, K., Conway, D., Lauderdale, B. E., Laver, M., & Mikhaylov, S. (2016). Crowd-sourced text analysis: Reproducible and agile production of political data. American Political Science Review, 110(2), 278–295.
+ 	* Proksch, S.O., Wratil, C. and W ̈ackerle, J., (2019). Testing the validity of automatic speech recognition for political text analysis. Political Analysis, 1–21
+	* De Vries, E., Schoonvelde, M. & Schumacher, G., (2018). No longer lost in translation: Evi- dence that Google Translate works for comparative bag-of-words text applications. Political Analysis, 26(4), 417–430.
+	* Torres, M. (2019). Give me the full picture: Using computer vision to understand visual frames and political communication. Working paper.
 
 *May 16: 15:30 - 17:10:*
-* Loose ends, review, and general discussion of pros and cons of automated text analysis.
+* New developments in modeling: (i) word embeddings, (ii) ltta
+* Flash talks
+* Loose ends
+* Required reading:
+	* Rudkowsky, E., Haselmayer, M., Wastian, M., Jenny, M., Emrich, Sˇ. & Sedlmair, M., (2018). More than bags of words: Sentiment analysis with word embeddings. Communication Methods and Measures, 12(2-3), 140–157.
+	* Kleinberg, B., Mozes, M., & van der Vegt, I. (2018). Identifying the sentiment styles of YouTube’s vloggers, EMNLP 2018.
 
 *May 17: 15:30 - 17:10:*
 * Research design presentations.
