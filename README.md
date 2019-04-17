@@ -39,7 +39,7 @@ You can find the syllabus [here](Syllabus_CEU.pdf). For any questions, send me a
 
 ### Acknowledgements
 
-For some code in the code practice scripts, I made use of materials by Jos Elkink [here](http://www.joselkink.net/files/POL30430_Spring_2017_lab11.html), and [here](http://www.joselkink.net/files/POL30430_Spring_2017_lab12.html), and Wouter van Atteveldt [here](http://vanatteveldt.com/ccs_lda/) and [here](http://vanatteveldt.com/learningr/). The setup of the code practice scripts follows the structure in Welbers, K., Van Atteveldt, W., & Benoit, K. (2017) (see below for citation). For some slides in week 1 of the course I made use of materials by Pablo Barber� and Ken Benoit [here](https://lse-my459.github.io/).
+For some code in the code practice scripts, I made use of materials by Jos Elkink [here](http://www.joselkink.net/files/POL30430_Spring_2017_lab11.html), and [here](http://www.joselkink.net/files/POL30430_Spring_2017_lab12.html), and Wouter van Atteveldt [here](http://vanatteveldt.com/ccs_lda/) and [here](http://vanatteveldt.com/learningr/). The setup of the code practice scripts follows the structure in Welbers, K., Van Atteveldt, W., & Benoit, K. (2017) (see below for citation). For some slides in week 1 of the course I made use of materials by Pablo Barberá and Ken Benoit [here](https://lse-my459.github.io/). Thanks to all.
 
 ## Course schedule
 ----
@@ -77,7 +77,7 @@ For some code in the code practice scripts, I made use of materials by Jos Elkin
 * Using dictionaries to measure sentiment, happiness and other things we're interested in.
 * Required reading:
 	* Pennebaker JW & King L (1999) Linguistic styles: language use as an individual difference. Journal of Personality and Social Psychology, 77(6), 1296-1312.
-	*  Young, L., & Soroka, S. (2012). Affective news: The automated coding of sentiment in political texts. Political Communication, 29(2), 205-231.
+	* Young, L., & Soroka, S. (2012). Affective news: The automated coding of sentiment in political texts. Political Communication, 29(2), 205-231.
 	* Kraft, P. (2018). Measuring morality in political attitude expression. Journal of Politics, 80(3): 1028–1033.
 	* Hawkins, K. & Castanho Silva, B. (2018). Text Analysis: Big Data Approaches. In: The Ideational Approach to Populism: Theory, Method & Analysis, edited by Kirk A. Hawkins, Ryan Carlin, Levente Littvay, and Cristobal Rovira Kaltwasser. London: Routledge.
 	* Ramey, A. J., Klingler, J. D., & Hollibaugh, G. E. (2019). Measuring elite personality using speech. Political Science Research and Methods, 7(1),163–184.
