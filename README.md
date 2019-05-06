@@ -10,8 +10,8 @@ You can find the syllabus [here](Syllabus_CEU.pdf). For any questions, send me a
 
 | Date        | Link           |   |
 | ------------- |:-------------:|  -------------:|
-| May  10, 17:00h   | [Assignment 1]() |
-| May  15, 17:00h   | [Assignment 2]() | |
+| May  10, 19:00h   | [Assignment 1]() |
+| May  15, 13:00h   | [Assignment 2]() | |
 
 ## Slides
 | Date        | Slides           |  Date        | Slides           |
