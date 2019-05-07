@@ -1,0 +1,107 @@
+---
+title: 'Processing Strings in R'
+date: "7 May 2019"
+output:
+  html_document: default
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE, results = TRUE)
+```
+
+Oftentimes text in `R` is stored as a string or character vector. It is important to become comfortable with string operations, since they allow you to clean a string before you start preprocessing the text. These string operations require some familiarity with regular expressions in `R` as well as with functions in the `stringr` library.^[`R` is open source with different teams working on similar issues, as a result of which there can be multiple packages that do the same thing. For example, functions in base `R` and the `stringi` package also let you manipulate strings in `R`] 
+
+Libraries like `quanteda` include string cleaning functions as well but knowledge of regular expressions and string operations allow you to deal with all the specifics of your text. That being said, these operations involve lots of trial and error as well as googling how to do certain things. But the more comfortable you are with them, the better you can clean your data, which will save you lot of headaches later on. Let's take a look at a set of useful functions.
+
+
+First load the `stringr` library in `R`
+```{r, out.width='\\textwidth'}
+library(stringr)
+```
+
+Then create a string vector called shopping_list:
+
+```{r, out.width='\\textwidth'}
+shopping_list <- c("apples x45!", "loaf of bread", "Bag of sugar", "milk x2 or x3")
+```
+
+Vectors are basic opjects in `R` which contain a set of values of the same type (character, numeric, factor, etc.) The shopping_list contains four character values. Check that this is true with the `str()` function: `str(shopping_list)`
+
+The `stringr` library contains many useful functions for working with character values, which are listed in this [cheat sheet](https://resources.rstudio.com/rstudio-cheatsheets/stringr-cheat-sheet). Let's go through a few examples. 
+
+```{r, out.width='\\textwidth'}
+#extract the first number in a string; remember: NA in R denotes a missing value.
+str_extract(shopping_list, "\\d")
+
+#extract first lower case character in a string
+str_extract(shopping_list, "[a-z]")
+
+#extract lower case characters one or more times (note the "+" symbol after "[a-z]")
+str_extract(shopping_list, "[a-z]+")
+
+#extract up to four lower case letters
+str_extract(shopping_list, "[a-z]{1,4}")
+
+#extract up to four upper or lower case letters
+str_extract(shopping_list, "[A-z]{1,4}")
+
+#extract words smaller than or equal to four letters
+str_extract(shopping_list, "\\b[a-z]{1,4}\\b")
+
+#extract all matches
+str_extract_all(shopping_list, "[A-z]+")
+str_extract_all(shopping_list, "\\d")
+
+#note that str_extract_all has a list of character strings as output. This can be simplified into a character matrix using the simplify command
+str_extract_all(shopping_list, "\\b[a-z]+\\b", simplify = TRUE)
+str_extract_all(shopping_list, "\\d", simplify = TRUE)
+
+unlist(str_extract_all(shopping_list, "\\b[a-z]+\\b"))
+
+#replace first match
+str_replace(shopping_list, "[aeiou]", "-")
+
+#replace all matches
+str_replace_all(shopping_list, "[aeiou]", "-")
+
+#upper case 
+str_to_upper(shopping_list)
+
+#lower case
+str_to_lower(shopping_list)
+
+```
+
+The following table contains a set of useful functions in the `stringr` package that help you perform string operations in *R*. 
+
+![**Table**: Stringr functions, taken from Chapter 8 of Automated Data Collection With R, by Munzert *et al* (2015). ]( stringr.png ){ width=65% }
+
+
+In *R*, you write regular expressions as strings, sequences of characters surrounded by quotes ("") or single quotes (''). Characters like +, ?, ^, and . have a special meaning in regular expressions and cannot be represented directly in an R string (see the RegEx [cheat sheet](https://resources.rstudio.com/rstudio-cheatsheets/stringr-cheat-sheet) for more examples). In order to match them literally, they need to be preceded by two backslashes: ``\\".
+
+
+```{r, out.width='\\textwidth'}
+
+name_list <- c("Jo.hn", "Anna.", "Si.+si")
+
+#compare the output of these two calls
+str_replace(name_list, ".", "-")
+str_replace(name_list, "\\.", "-")
+
+#compare the output of these two calls
+str_replace(name_list, ".+", "-")
+str_replace(name_list, "\\.\\+", "-")
+
+```
+
+## Excercise
+
+The local zoo has made an inventory of its animal stock.^[This exercise is based on an example from Automated Data Collection With R, by Munzert *et al* (2015).]  However, the zoo keepers did a messy job with writing up totals as you can see below. You are hired to clean up the mess using *R*.
+
+```{r, out.width='\\textwidth'}
+zoo <- c("bear x2", "Ostric7", "platypus x60", "x7 Eliphant", "x16 conDOR")
+```
+
+Use the functions in the `stringr` to clean up the string, taking out typos, etc. Generate an *R* dataframe with the following variables: *animal* (character), *number* (numeric). 
+
+A dataframe contains multiple vectors to construct a dataset. These vectors can contain values of different types (character, numeric, etc.)
