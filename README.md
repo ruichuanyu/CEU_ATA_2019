@@ -27,7 +27,7 @@ You can find the syllabus [here](Syllabus_CEU.pdf). For any questions, send me a
 | Date        | Link           |
 | ------------- |:-------------:|
 | May  6   | Introduction |
-| May  7   | [Script]() |
+| May  7   | [Script](Code_Practice/String_Operations.html) |
 | May  8   | [Script](), [Data]()|
 | May  9   | [Script](), [Data]()|
 | May  10   | [Script](), [Data]()|
